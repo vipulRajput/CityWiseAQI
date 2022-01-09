@@ -19,14 +19,14 @@ struct City {
         
         self.name = info.cityName
         self.currentAQI = String(format: "%.1f", info.aqi)
-        self.level = AQILevel.getAqiLabel(for: info.aqi)
+        self.level = AQILevel.getAqiLevel(for: info.aqi)
         self.recordTime = Date()
     }
         
     mutating func updateCity(info: AirQualityInfo) {
         
         self.currentAQI = String(format: "%.1f", info.aqi)
-        self.level = AQILevel.getAqiLabel(for: info.aqi)
+        self.level = AQILevel.getAqiLevel(for: info.aqi)
         self.recordTime = Date()
     }
 }

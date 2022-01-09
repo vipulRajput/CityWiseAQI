@@ -18,7 +18,7 @@ enum AQILevel {
     case severe
     case unknown
     
-    static func getAqiLabel(for aqi: Double) -> AQILevel {
+    static func getAqiLevel(for aqi: Double) -> AQILevel {
         
         switch aqi {
         
@@ -83,7 +83,6 @@ enum AQILevel {
     
     func getFace() -> String {
         
-//        utilityicon
         switch self {
         
         case .good:

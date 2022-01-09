@@ -16,7 +16,7 @@ struct AQI {
     init(info: AirQualityInfo) {
         
         currentValue = info.aqi
-        level = AQILevel.getAqiLabel(for: info.aqi)
+        level = AQILevel.getAqiLevel(for: info.aqi)
         recordTime = Date()
     }
 }
