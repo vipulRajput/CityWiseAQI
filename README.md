@@ -1,6 +1,9 @@
 # CityWiseAQI
 This app is using web-socket for realtime updation of aqi for dedicated inidan cities.  
 
+![Screenshots](https://github.com/vipulRajput/CityWiseAQI/issues/1)
+
+
 We're following MVVM architecture in this app.
 This app has two modules:- 
 1. Listing of All Cities
