@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE4840A127896378000C42F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840A027896378000C42F6 /* AppDelegate.swift */; };
+		CE4840A327896378000C42F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840A227896378000C42F6 /* SceneDelegate.swift */; };
+		CE4840A827896378000C42F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4840A627896378000C42F6 /* Main.storyboard */; };
+		CE4840AA27896379000C42F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4840A927896379000C42F6 /* Assets.xcassets */; };
+		CE4840AD27896379000C42F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4840AB27896379000C42F6 /* LaunchScreen.storyboard */; };
+		CE4840D527896482000C42F6 /* TableContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840D427896482000C42F6 /* TableContentProvider.swift */; };
+		CE4840DD278964F4000C42F6 /* CellModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840DC278964F4000C42F6 /* CellModelProtocol.swift */; };
+		CE4840E227896529000C42F6 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840E127896529000C42F6 /* TableViewModel.swift */; };
+		CE4840E72789654E000C42F6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840E62789654E000C42F6 /* BaseTableViewCell.swift */; };
+		CE4840EC27896577000C42F6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840EB27896577000C42F6 /* BaseViewModel.swift */; };
+		CE4840F1278965B2000C42F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4840F0278965B2000C42F6 /* BaseViewController.swift */; };
+		CE4840F7278966B7000C42F6 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = CE4840F6278966B7000C42F6 /* Starscream */; };
+		CE48410427896BF5000C42F6 /* CityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48410327896BF5000C42F6 /* CityListVC.swift */; };
+		CE48410D27896C4C000C42F6 /* CityAqiTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48410B27896C4C000C42F6 /* CityAqiTableCell.swift */; };
+		CE48410E27896C4C000C42F6 /* CityAqiTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE48410C27896C4C000C42F6 /* CityAqiTableCell.xib */; };
+		CE48411C27897308000C42F6 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48411B27897308000C42F6 /* CityListViewModel.swift */; };
+		CE48412127897776000C42F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48412027897776000C42F6 /* Constants.swift */; };
+		CE48412627898230000C42F6 /* AirQualityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48412527898230000C42F6 /* AirQualityInfo.swift */; };
+		CE48412B278983BE000C42F6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48412A278983BE000C42F6 /* City.swift */; };
+		CE48413027898404000C42F6 /* AQI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48412F27898404000C42F6 /* AQI.swift */; };
+		CE48413527898633000C42F6 /* AQILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48413427898633000C42F6 /* AQILevel.swift */; };
+		CE4841482789BA63000C42F6 /* CityAqiDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4841472789BA63000C42F6 /* CityAqiDetailsVC.swift */; };
+		CE4841512789C99B000C42F6 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = CE4841502789C99B000C42F6 /* Charts */; };
+		CE4841582789CBEF000C42F6 /* CityAqiDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4841572789CBEF000C42F6 /* CityAqiDetailsViewModel.swift */; };
+		CE48415D2789E422000C42F6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48415C2789E422000C42F6 /* DateExtension.swift */; };
+		CEA3DD74278AE9860075AF7B /* utilityicon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA3DD73278AE9860075AF7B /* utilityicon.ttf */; };
+		CEA3DD84278B04350075AF7B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3DD83278B04350075AF7B /* UIViewControllerExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE48409D27896378000C42F6 /* CityWiseAQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityWiseAQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4840A027896378000C42F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE4840A227896378000C42F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE4840A727896378000C42F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4840A927896379000C42F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4840AC27896379000C42F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4840AE27896379000C42F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4840D427896482000C42F6 /* TableContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContentProvider.swift; sourceTree = "<group>"; };
+		CE4840DC278964F4000C42F6 /* CellModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModelProtocol.swift; sourceTree = "<group>"; };
+		CE4840E127896529000C42F6 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		CE4840E62789654E000C42F6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CE4840EB27896577000C42F6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CE4840F0278965B2000C42F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE48410327896BF5000C42F6 /* CityListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListVC.swift; sourceTree = "<group>"; };
+		CE48410B27896C4C000C42F6 /* CityAqiTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAqiTableCell.swift; sourceTree = "<group>"; };
+		CE48410C27896C4C000C42F6 /* CityAqiTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityAqiTableCell.xib; sourceTree = "<group>"; };
+		CE48411B27897308000C42F6 /* CityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModel.swift; sourceTree = "<group>"; };
+		CE48412027897776000C42F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE48412527898230000C42F6 /* AirQualityInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityInfo.swift; sourceTree = "<group>"; };
+		CE48412A278983BE000C42F6 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		CE48412F27898404000C42F6 /* AQI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQI.swift; sourceTree = "<group>"; };
+		CE48413427898633000C42F6 /* AQILevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQILevel.swift; sourceTree = "<group>"; };
+		CE4841472789BA63000C42F6 /* CityAqiDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAqiDetailsVC.swift; sourceTree = "<group>"; };
+		CE4841572789CBEF000C42F6 /* CityAqiDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAqiDetailsViewModel.swift; sourceTree = "<group>"; };
+		CE48415C2789E422000C42F6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CEA3DD73278AE9860075AF7B /* utilityicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = utilityicon.ttf; sourceTree = "<group>"; };
+		CEA3DD83278B04350075AF7B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE48409A27896378000C42F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4840F7278966B7000C42F6 /* Starscream in Frameworks */,
+				CE4841512789C99B000C42F6 /* Charts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE48409427896378000C42F6 = {
+			isa = PBXGroup;
+			children = (
+				CE48409F27896378000C42F6 /* CityWiseAQI */,
+				CE48409E27896378000C42F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE48409E27896378000C42F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE48409D27896378000C42F6 /* CityWiseAQI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE48409F27896378000C42F6 /* CityWiseAQI */ = {
+			isa = PBXGroup;
+			children = (
+				CE4840FB27896753000C42F6 /* AppModules */,
+				CEA3DD72278AE9680075AF7B /* Fonts */,
+				CE48411227897168000C42F6 /* Extensions */,
+				CE4840D32789645A000C42F6 /* Common */,
+				CE4840FE278969FA000C42F6 /* Storyboards */,
+				CE4840A927896379000C42F6 /* Assets.xcassets */,
+				CE4840AE27896379000C42F6 /* Info.plist */,
+			);
+			path = CityWiseAQI;
+			sourceTree = "<group>";
+		};
+		CE4840D32789645A000C42F6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE4840A027896378000C42F6 /* AppDelegate.swift */,
+				CE4840DC278964F4000C42F6 /* CellModelProtocol.swift */,
+				CE4840D427896482000C42F6 /* TableContentProvider.swift */,
+				CE4840E127896529000C42F6 /* TableViewModel.swift */,
+				CE4840E62789654E000C42F6 /* BaseTableViewCell.swift */,
+				CE4840EB27896577000C42F6 /* BaseViewModel.swift */,
+				CE4840F0278965B2000C42F6 /* BaseViewController.swift */,
+				CE48412027897776000C42F6 /* Constants.swift */,
+				CE4840A227896378000C42F6 /* SceneDelegate.swift */,
+				CE48413427898633000C42F6 /* AQILevel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE4840FB27896753000C42F6 /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				CE4840FC2789691D000C42F6 /* CityList */,
+				CE4840FD27896980000C42F6 /* CityAqiDetails */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		CE4840FC2789691D000C42F6 /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				CE48410127896B91000C42F6 /* View */,
+				CE48410027896B7F000C42F6 /* ViewModel */,
+				CE4840FF27896B72000C42F6 /* Model */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		CE4840FD27896980000C42F6 /* CityAqiDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CE4841562789CBD5000C42F6 /* View */,
+				CE4841552789CBCF000C42F6 /* ViewModel */,
+			);
+			path = CityAqiDetails;
+			sourceTree = "<group>";
+		};
+		CE4840FE278969FA000C42F6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE4840A627896378000C42F6 /* Main.storyboard */,
+				CE4840AB27896379000C42F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE4840FF27896B72000C42F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE48412527898230000C42F6 /* AirQualityInfo.swift */,
+				CE48412A278983BE000C42F6 /* City.swift */,
+				CE48412F27898404000C42F6 /* AQI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE48410027896B7F000C42F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE48411B27897308000C42F6 /* CityListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE48410127896B91000C42F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE48410227896BC8000C42F6 /* Xibs */,
+				CE48410327896BF5000C42F6 /* CityListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE48410227896BC8000C42F6 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CE48410B27896C4C000C42F6 /* CityAqiTableCell.swift */,
+				CE48410C27896C4C000C42F6 /* CityAqiTableCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		CE48411227897168000C42F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE48415C2789E422000C42F6 /* DateExtension.swift */,
+				CEA3DD83278B04350075AF7B /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE4841552789CBCF000C42F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE4841572789CBEF000C42F6 /* CityAqiDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE4841562789CBD5000C42F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE4841472789BA63000C42F6 /* CityAqiDetailsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA3DD72278AE9680075AF7B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3DD73278AE9860075AF7B /* utilityicon.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE48409C27896378000C42F6 /* CityWiseAQI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4840C727896379000C42F6 /* Build configuration list for PBXNativeTarget "CityWiseAQI" */;
+			buildPhases = (
+				CE48409927896378000C42F6 /* Sources */,
+				CE48409A27896378000C42F6 /* Frameworks */,
+				CE48409B27896378000C42F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityWiseAQI;
+			packageProductDependencies = (
+				CE4840F6278966B7000C42F6 /* Starscream */,
+				CE4841502789C99B000C42F6 /* Charts */,
+			);
+			productName = CityWiseAQI;
+			productReference = CE48409D27896378000C42F6 /* CityWiseAQI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE48409527896378000C42F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CE48409C27896378000C42F6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CE48409827896378000C42F6 /* Build configuration list for PBXProject "CityWiseAQI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE48409427896378000C42F6;
+			packageReferences = (
+				CE4840F5278966B7000C42F6 /* XCRemoteSwiftPackageReference "Starscream" */,
+				CE48414F2789C99B000C42F6 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = CE48409E27896378000C42F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE48409C27896378000C42F6 /* CityWiseAQI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE48409B27896378000C42F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4840AD27896379000C42F6 /* LaunchScreen.storyboard in Resources */,
+				CE48410E27896C4C000C42F6 /* CityAqiTableCell.xib in Resources */,
+				CEA3DD74278AE9860075AF7B /* utilityicon.ttf in Resources */,
+				CE4840AA27896379000C42F6 /* Assets.xcassets in Resources */,
+				CE4840A827896378000C42F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE48409927896378000C42F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE48413027898404000C42F6 /* AQI.swift in Sources */,
+				CE48411C27897308000C42F6 /* CityListViewModel.swift in Sources */,
+				CE48410D27896C4C000C42F6 /* CityAqiTableCell.swift in Sources */,
+				CE4841482789BA63000C42F6 /* CityAqiDetailsVC.swift in Sources */,
+				CE4840DD278964F4000C42F6 /* CellModelProtocol.swift in Sources */,
+				CE4840A127896378000C42F6 /* AppDelegate.swift in Sources */,
+				CE48412627898230000C42F6 /* AirQualityInfo.swift in Sources */,
+				CE4840E227896529000C42F6 /* TableViewModel.swift in Sources */,
+				CE4840E72789654E000C42F6 /* BaseTableViewCell.swift in Sources */,
+				CE48410427896BF5000C42F6 /* CityListVC.swift in Sources */,
+				CE4840F1278965B2000C42F6 /* BaseViewController.swift in Sources */,
+				CE4840EC27896577000C42F6 /* BaseViewModel.swift in Sources */,
+				CEA3DD84278B04350075AF7B /* UIViewControllerExtension.swift in Sources */,
+				CE48412127897776000C42F6 /* Constants.swift in Sources */,
+				CE4840A327896378000C42F6 /* SceneDelegate.swift in Sources */,
+				CE48415D2789E422000C42F6 /* DateExtension.swift in Sources */,
+				CE48412B278983BE000C42F6 /* City.swift in Sources */,
+				CE4841582789CBEF000C42F6 /* CityAqiDetailsViewModel.swift in Sources */,
+				CE48413527898633000C42F6 /* AQILevel.swift in Sources */,
+				CE4840D527896482000C42F6 /* TableContentProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE4840A627896378000C42F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4840A727896378000C42F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4840AB27896379000C42F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4840AC27896379000C42F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4840C527896379000C42F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE4840C627896379000C42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4840C827896379000C42F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLGGTT4FUJ;
+				INFOPLIST_FILE = CityWiseAQI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vApp.CityWiseAQI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE4840C927896379000C42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLGGTT4FUJ;
+				INFOPLIST_FILE = CityWiseAQI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vApp.CityWiseAQI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE48409827896378000C42F6 /* Build configuration list for PBXProject "CityWiseAQI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4840C527896379000C42F6 /* Debug */,
+				CE4840C627896379000C42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4840C727896379000C42F6 /* Build configuration list for PBXNativeTarget "CityWiseAQI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4840C827896379000C42F6 /* Debug */,
+				CE4840C927896379000C42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE4840F5278966B7000C42F6 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		CE48414F2789C99B000C42F6 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE4840F6278966B7000C42F6 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE4840F5278966B7000C42F6 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		CE4841502789C99B000C42F6 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE48414F2789C99B000C42F6 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE48409527896378000C42F6 /* Project object */;
+}

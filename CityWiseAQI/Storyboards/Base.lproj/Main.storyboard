@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vmQ-Nw-vvM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CityWiseAQI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="109"/>
+        </scene>
+        <!--City ListVC-->
+        <scene sceneID="7N7-3g-0Vd">
+            <objects>
+                <viewController id="UOX-pe-aXs" customClass="CityListVC" customModule="CityWiseAQI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tpd-aN-9g7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pcK-cg-gFP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nx5-2H-nBk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pcK-cg-gFP" firstAttribute="leading" secondItem="Nx5-2H-nBk" secondAttribute="leading" id="8bP-jr-DGy"/>
+                            <constraint firstAttribute="bottom" secondItem="pcK-cg-gFP" secondAttribute="bottom" id="czx-bS-bHi"/>
+                            <constraint firstItem="Nx5-2H-nBk" firstAttribute="trailing" secondItem="pcK-cg-gFP" secondAttribute="trailing" id="gHn-cA-P7I"/>
+                            <constraint firstItem="pcK-cg-gFP" firstAttribute="top" secondItem="Nx5-2H-nBk" secondAttribute="top" id="rPJ-Mr-3o5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1m2-6K-tdt"/>
+                    <connections>
+                        <outlet property="cityTableView" destination="pcK-cg-gFP" id="UGl-cH-Lok"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hW-D4-Uos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600.0000000000002" y="107.8125"/>
+        </scene>
+        <!--City Aqi DetailsVC-->
+        <scene sceneID="C9W-dN-0V2">
+            <objects>
+                <viewController storyboardIdentifier="CityAqiDetailsVC" id="wCo-RD-ctl" customClass="CityAqiDetailsVC" customModule="CityWiseAQI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2eP-19-bl7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drm-Ot-Zr3" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="117" width="414" height="672"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uzK-tW-0Oa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Drm-Ot-Zr3" firstAttribute="height" secondItem="2eP-19-bl7" secondAttribute="height" multiplier="0.75" id="aOR-Zq-6lu"/>
+                            <constraint firstItem="Drm-Ot-Zr3" firstAttribute="centerY" secondItem="uzK-tW-0Oa" secondAttribute="centerY" id="eSk-ej-aqQ"/>
+                            <constraint firstItem="Drm-Ot-Zr3" firstAttribute="leading" secondItem="uzK-tW-0Oa" secondAttribute="leading" id="fGy-Hw-cD5"/>
+                            <constraint firstItem="uzK-tW-0Oa" firstAttribute="trailing" secondItem="Drm-Ot-Zr3" secondAttribute="trailing" id="qte-Ha-9Bb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aqiChart" destination="Drm-Ot-Zr3" id="2dq-ip-K34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5q-yv-dLw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418.840579710145" y="107.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mRD-lg-qFb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vmQ-Nw-vvM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EcT-Vc-DN1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UOX-pe-aXs" kind="relationship" relationship="rootViewController" id="s6p-po-dHh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFY-bb-dyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689.85507246376812" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
