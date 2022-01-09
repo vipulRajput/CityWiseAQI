@@ -62,9 +62,9 @@ We also have one enum called AQILevel, which has all the required methods like:-
 
 Time Invested:-
 1. Socket: 4 hours
-2. Cities listing: 3 hours
+2. Cities listing: 2 hours
 3. Charts:- 3 hours 
-4. Project setup & Handling of use cases:- 2 hours 
+4. Project setup & Handling of use cases:- 1 hour
 
-Overall around 12 hours have been invested on it.
+Overall around 10 hours have been invested on it.
 
